@@ -1,78 +1,35 @@
-/* Reset some default styles */
-body, figure, h1, h2, h3, p, ul, ol, li {
-    margin: 0;
-    padding: 0;
-}
-
-/* Set default font and text color */
-body {
-    font-family: Arial, sans-serif;
-    color: #333;
-}
-
-/* Set maximum width for the main content */
-main {
-    max-width: 800px;
-    margin: 0 auto;
-    padding: 20px;
-}
-
-/* Style form elements */
-form {
-    display: grid;
-    gap: 10px;
-}
-
-label {
-    font-weight: bold;
-}
-
-select, input[type="text"], input[type="email"], button {
-    width: 100%;
-    padding: 10px;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-}
-
-select:focus, input[type="text"]:focus, input[type="email"]:focus {
-    outline: none;
-    border-color: #007bff;
-}
-
-button {
-    background-color: #007bff;
-    color: #fff;
-    font-weight: bold;
+.tb_button {
+    padding: 1px;
     cursor: pointer;
-    transition: background-color 0.3s ease;
+    border-right: 1px solid #8b8b8b;
+    border-left: 1px solid #fff;
+    border-bottom: 1px solid #fff;
 }
 
-button:hover {
-    background-color: #0056b3;
+.tb_button.hover {
+    border: 2px outset #def;
+    background-color: #f8f8f8 !important;
 }
 
-/* Style header and footer */
-header, footer {
-    background-color: #007bff;
-    color: #fff;
-    padding: 10px;
+.ws_toolbar {
+    z-index: 100000;
 }
 
-header nav ul {
-    display: flex;
-    list-style-type: none;
+.ws_toolbar .ws_tb_btn {
+    cursor: pointer;
+    border: 1px solid #555;
+    padding: 3px;
 }
 
-header nav ul li {
-    margin-right: 10px;
+.tb_highlight {
+    background-color: yellow;
 }
 
-header nav ul li a {
-    color: #fff;
-    text-decoration: none;
-    transition: color 0.3s ease;
+.tb_hide {
+    visibility: hidden;
 }
 
-header nav ul li a:hover {
-    color: #cce5ff;
+.ws_toolbar img {
+    padding: 2px;
+    margin: 0px;
 }
