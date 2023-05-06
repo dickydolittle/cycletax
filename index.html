@@ -1,42 +1,52 @@
-<!DOCTYPE html>
-<html>
+<<!DOCTYPE html>
+<html lang="en">
 <head>
-	<title>Vehicle Tax</title>
-	<link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cycle Emissions Tax | Gov.uk</title>
+  <link rel="stylesheet" href="https://assets.publishing.service.gov.uk/static/govuk-template-3.10.0/assets/stylesheets/govuk-template.css" type="text/css">
+  <link rel="stylesheet" href="https://assets.publishing.service.gov.uk/static/govuk-template-3.10.0/assets/stylesheets/govuk-frontend.css" type="text/css">
 </head>
-<body>
-	<header>
-		<nav>
-			<ul>
-				<li><a href="#">Home</a></li>
-				<li><a href="#">Vehicle Tax</a></li>
-				<li><a href="#">About</a></li>
-			</ul>
-		</nav>
-	</header>
-	<main>
-		<form>
-			<label for="vehicle-type">Vehicle Type:</label>
-			<select id="vehicle-type" name="vehicle-type">
-				<option value="cycle">Cycle</option>
-				<option value="scooter">Scooter</option>
-				<option value="cargo-cycle">Cargo Cycle</option>
-			</select>
-			<label for="manufacturer">Manufacturer:</label>
-			<input type="text" id="manufacturer" name="manufacturer">
-			<label for="model">Model:</label>
-			<input type="text" id="model" name="model">
-			<label for="colour">Colour:</label>
-			<input type="text" id="colour" name="colour">
-			<label for="wheel-size">Wheel Size:</label>
-			<input type="text" id="wheel-size" name="wheel-size">
-			<label for="email">Email Address:</label>
-			<input type="email" id="email" name="email">
-			<button type="submit">Submit</button>
-		</form>
-	</main>
-	<footer>
-		<p>&copy; 2023 Vehicle Tax. All rights reserved.</p>
-	</footer>
-</body>
-</html>
+<body class="govuk-template__body">
+  <header class="govuk-header " role="banner" data-module="govuk-header">
+    <div class="govuk-header__container govuk-width-container">
+      <div class="govuk-header__logo">
+        <a href="/" class="govuk-header__link govuk-header__link--homepage">
+          <span class="govuk-header__logotype">
+            <span class="govuk-header__logotype-text">Gov.uk</span>
+          </span>
+        </a>
+      </div>
+      <div class="govuk-header__content">
+        <nav class="govuk-header__navigation" aria-label="Top Level Navigation" role="navigation">
+          <ul class="govuk-header__navigation-list govuk-header__navigation-list--right">
+            <li class="govuk-header__navigation-item"><a class="govuk-header__link" href="/tax-disc">Motor Vehicle Tax</a></li>
+            <li class="govuk-header__navigation-item"><a class="govuk-header__link" href="/cycle-emissions-tax">Cycle Emissions Tax</a></li>
+            <li class="govuk-header__navigation-item"><a class="govuk-header__link" href="/contact">Contact</a></li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+  </header>
+
+  <main class="govuk-main-wrapper" id="main-content" role="main">
+    <div class="govuk-grid-row">
+      <div class="govuk-grid-column-two-thirds">
+        <div class="govuk-panel govuk-panel--confirmation">
+          <h1 class="govuk-panel__title">Check your cycle's emissions tax</h1>
+          <div class="govuk-panel__body">
+            <form action="#" method="get">
+              <div class="govuk-form-group">
+                <label class="govuk-label" for="cycle-reg">Enter your cycle registration number</label>
+                <input class="govuk-input govuk-input--width-20" id="cycle-reg" name="cycle-reg" type="text" required>
+              </div>
+              <button class="govuk-button govuk-button--start" type="submit">Check emissions tax</button>
+            </form>
+          </div>
+        </div>
+        <div class="govuk-panel govuk-panel--confirmation">
+          <h2 class="govuk-panel__title">Results for cycle registration number ABC 123</h2>
+          <div class="govuk-panel__body">
+            <ul class="govuk-list govuk-list--bullet">
+              <li>Your cycle produces zero emissions</li>
+              <li>Your cycle
