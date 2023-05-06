@@ -1,138 +1,138 @@
-/* Typography */
+/*
+ * Font stack
+ */
+
 body {
-  font-family: 'Helvetica Neue', sans-serif;
-  font-size: 16px;
-  line-height: 1.5;
+  font-family: "GDS Transport", Arial, sans-serif;
+}
+
+
+/*
+ * Colours
+ */
+
+/* Background colours */
+body {
+  background-color: #f0f2f5;
+}
+
+/* Text colours */
+.govuk-body, .govuk-input, .govuk-textarea, .govuk-label {
   color: #0b0c0c;
 }
 
-h1, h2, h3, h4, h5, h6 {
-  font-weight: bold;
-  margin-top: 0;
+.govuk-header__logotype-text, .govuk-header__link--homepage, .govuk-header__link {
+  color: #0b0c0c !important;
 }
 
-h1 {
-  font-size: 36px;
-  line-height: 1.16667;
+/* Links */
+.govuk-link {
+  color: #005ea5;
 }
 
-h2 {
-  font-size: 24px;
-  line-height: 1.25;
-}
-
-h3 {
-  font-size: 19.2px;
-  line-height: 1.31579;
-}
-
-h4 {
-  font-size: 16px;
-  line-height: 1.5;
-}
-
-h5 {
-  font-size: 13.6px;
-  line-height: 1.47059;
-}
-
-h6 {
-  font-size: 12px;
-  line-height: 1.5;
-}
-
-p {
-  margin-top: 0;
-}
-
-/* Colors */
-:root {
-  --govuk-color: #0b0c0c;
-  --govuk-color--light: #f8f8f8;
-  --govuk-color--medium: #696969;
-  --govuk-color--dark: #3d3d3d;
-  --govuk-color--link: #1d70b8;
-  --govuk-color--error: #d4351c;
-}
-
-/* Layout */
-.govuk-header__navigation {
-  display: flex;
-  justify-content: flex-end;
-}
-
-.govuk-header__navigation-item {
-  margin-left: 1rem;
-}
-
-.govuk-main-wrapper {
-  padding: 1rem;
+.govuk-link:hover {
+  color: #005ea5;
 }
 
 /* Buttons */
 .govuk-button {
-  display: inline-block;
-  padding: 0.5rem 1rem;
-  font-size: 1rem;
-  font-weight: bold;
-  line-height: 1.25;
-  text-align: center;
-  text-decoration: none;
-  white-space: nowrap;
-  border: 2px solid var(--govuk-color);
-  background: var(--govuk-color);
+  background-color: #005ea5;
+  border: none;
   color: #fff;
-  cursor: pointer;
+  font-weight: bold;
 }
 
-.govuk-button:hover,
+.govuk-button:hover {
+  background-color: #1d70b8;
+}
+
 .govuk-button:focus {
-  background: var(--govuk-color--dark);
-  border-color: var(--govuk-color--dark);
+  box-shadow: 0 0 0 4px #dfe3e6;
+  outline: none;
+}
+
+.govuk-button:active {
+  background-color: #0b0c0c;
 }
 
 .govuk-button--start {
-  margin-top: 1rem;
+  margin-top: 30px;
 }
 
-/* Form elements */
+.govuk-button--disabled,
+.govuk-button[disabled] {
+  background-color: #bfc1c3;
+  border: none;
+  color: #fff;
+  opacity: 0.5;
+  pointer-events: none;
+}
+
+/* Headings */
+.govuk-heading-xl, .govuk-fieldset__legend--xl {
+  font-size: 48px;
+  font-weight: normal;
+  line-height: 1.2;
+  margin-bottom: 30px;
+}
+
+.govuk-heading-l, .govuk-fieldset__legend--l {
+  font-size: 36px;
+  font-weight: normal;
+  line-height: 1.2;
+  margin-bottom: 20px;
+}
+
+.govuk-heading-m, .govuk-fieldset__legend--m {
+  font-size: 24px;
+  font-weight: normal;
+  line-height: 1.2;
+  margin-bottom: 20px;
+}
+
+.govuk-heading-s, .govuk-fieldset__legend--s {
+  font-size: 19.2px;
+  font-weight: normal;
+  line-height: 1.2;
+  margin-bottom: 15px;
+}
+
+.govuk-fieldset__legend {
+  border: none;
+  display: block;
+  margin: 0;
+  padding: 0;
+}
+
+/* Form */
 .govuk-form-group {
-  margin-bottom: 2rem;
+  margin-bottom: 30px;
+}
+
+.govuk-form-group--error {
+  margin-bottom: 0;
 }
 
 .govuk-label {
+  display: inline-block;
   font-weight: bold;
-  display: block;
-  margin-bottom: 0.5rem;
+  margin-bottom: 5px;
 }
 
-.govuk-input {
+.govuk-input, .govuk-select, .govuk-textarea {
+  border: 1px solid #bfc1c3;
+  border-radius: 4px;
+  box-sizing: border-box;
   display: block;
+  font-size: 19.2px;
+  margin-top: 5px;
+  padding: 10px;
   width: 100%;
-  padding: 0.5rem;
-  border: 2px solid var(--govuk-color);
-  border-radius: 0;
-  font-size: 1rem;
-  line-height: 1.25;
-  background: #fff;
-  color: var(--govuk-color);
-  transition: border-color 0.2s ease-in-out;
 }
 
-.govuk-input:focus {
+.govuk-input:focus, .govuk-select:focus, .govuk-textarea:focus {
+  border-color: #005ea5;
   outline: none;
-  border-color: var(--govuk-color--dark);
 }
 
-/* Panels */
-.govuk-panel {
-  padding: 1rem;
-  border: 2px solid var(--govuk-color);
-  background: #fff;
-  color: var(--govuk-color);
-  margin-bottom: 2rem;
-}
-
-.govuk-panel__title {
-  font-weight: bold;
-  margin-top:
+.govuk-input--error, .govuk-select--error, .govuk-textarea--error {
